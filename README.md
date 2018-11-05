@@ -1,1 +1,1 @@
-# Tempature cencer
+# Temperature sensor
