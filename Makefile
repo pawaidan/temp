@@ -1,11 +1,11 @@
 CC=gcc
 CFLAGS=-lWarn -pedantic
 
-alarm: alarm.o 
-	$(CC) alarm.o -L. -lcurl -lwiringPi -o alarm
+alarm: temp.o 
+	$(CC) temp.o -L. -lcurl -lwiringPi -o temp
 
-alarm.o: alarm.c
+temp.o: temp.c
 	$(CC) $(CFLAGS) -c -ansi $<
 
 clean:
-	rm alarm *.o
+	rm temp *.o
